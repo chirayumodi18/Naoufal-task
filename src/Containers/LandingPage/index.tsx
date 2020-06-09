@@ -1,0 +1,45 @@
+import React from 'react'
+import CoverImage from "./coverImage";
+import Section2 from "./Section2";
+import HostingSteps from './hostingSteps';
+import BlogSection from './blogSection';
+import Covered from './covered';
+import Payment from './payment';
+import BlogSection2 from './blogSection2';
+import Person2 from '../../images/person2.jpg';
+import './LandingPage.scss';
+
+const Divider = () => {
+  return (
+    <div className="divider">
+      <div className="custom-border" />
+    </div>
+  )
+};
+
+const LandingPage = () => {
+  return (
+    <div className="Landing-page">
+      <CoverImage />
+      <Section2 />
+      <Divider />
+      <HostingSteps />
+      <div className="height-divider container" />
+      <BlogSection />
+      <Divider />
+      <Covered />
+      <div className="person-image">
+        <div className="image-wrapper">
+          <img src={Person2} alt="person" />
+        </div>
+      </div>
+      <div className="height-divider container" />
+      <Divider />
+      <Payment />
+      <BlogSection2 />
+      <Divider />
+    </div>
+    )
+}
+
+export default LandingPage;
