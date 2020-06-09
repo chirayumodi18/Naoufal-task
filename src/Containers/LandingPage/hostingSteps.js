@@ -7,7 +7,7 @@ const HostingSteps = () => {
 			<div className="heading">
 				<h2>Hosting in 3 steps</h2>
 			</div>
-			<div className="hosting-steps-wrapper">
+			<div className="hosting-steps-wrapper mt-5">
 				<div className="hosting-steps">
 					<div className="step">
 						<div className="step-margin">

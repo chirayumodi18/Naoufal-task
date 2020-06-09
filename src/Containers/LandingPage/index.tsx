@@ -10,6 +10,7 @@ import HostsDataSection from './hostsDataSection';
 import AboutPage from './about';
 import FrequentlyAskedQuestions from './frequentlyAskedQuestions';
 import AboutHosting from './aboutHosting';
+import ReadyToEarn from './readyToEarn';
 
 import Person2 from '../../images/person2.jpg';
 
@@ -53,6 +54,9 @@ const LandingPage = () => {
       <FrequentlyAskedQuestions />
       <div className="height-divider container" />
       <AboutHosting />
+      <div className="height-divider container" />
+      <ReadyToEarn />
+      <div className="height-divider container" />
     </div>
     )
 }

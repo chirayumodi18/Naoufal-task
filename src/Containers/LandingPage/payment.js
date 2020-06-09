@@ -9,7 +9,7 @@ const Payment = () => {
 			<div className="payment-steps-wrapper">
 				<div className="payment-steps">
 					<div className="step">
-						<div className="step-margin">
+						<div className="step-margin ml-0">
 							<div className="heading">
 								<h3>Charge what you want</h3>
 							</div>
@@ -21,7 +21,7 @@ const Payment = () => {
 						</div>
 					</div>
 					<div className="step">
-						<div className="step-margin">
+						<div className="step-margin ml-0">
 							<div className="heading">
 								<h3>Pay low fees</h3>
 							</div>
@@ -34,7 +34,7 @@ const Payment = () => {
 						</div>
 					</div>
 					<div className="step">
-						<div className="step-margin">
+						<div className="step-margin ml-0">
 							<div className="heading">
 								<h3>Get paid quickly</h3>
 							</div>

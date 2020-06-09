@@ -5,7 +5,7 @@ import Person1 from '../../images/person1.jpg';
 const BlogSection = () => {
 	return (
 		<div className="blog-section">
-			<div className="blog-section-wrapper">
+			<div className="blog-section-wrapper mt-5">
 				<div className="mt-5 quote-wrapper">
 					<div className="quote">
 						<img src={quote} alt="quote" />

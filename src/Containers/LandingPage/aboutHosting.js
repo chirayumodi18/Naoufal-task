@@ -6,7 +6,7 @@ import HostingImage3 from '../../images/hosting-image3.jpg';
 const AboutHosting = () => {
 	return (
 		<div className="about-hosting">
-			<div className="about-hosting-heading">
+			<div className="about-hosting-heading mb-3">
 				More about hosting
 			</div>
 			<div className="about-hosting-wrapper">

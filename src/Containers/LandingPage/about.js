@@ -6,8 +6,8 @@ const AboutPage = () => {
 			<div className="heading">
 				<h2>About Airbnb</h2>
 			</div>
-			<div className="marketing-wrapper my-5">
-				<div className="container d-flex mb-5 wrapper">
+			<div className="marketing-wrapper mt-5">
+				<div className="container d-flex wrapper my-5">
 					<div className="marketing">
 						<h3>What is Airbnb?</h3>
 						<p>

@@ -5,8 +5,8 @@ import Person3 from '../../images/person3.jpg';
 const BlogSection2 = () => {
 	return (
 		<div className="blog-section">
-			<div className="blog-section-wrapper">
-				<div className="person-wrapper">
+			<div className="blog-section-wrapper mt-5">
+				<div className="person-wrapper ">
 					<div className="person">
 						<img src={Person3} alt="person1" />
 					</div>

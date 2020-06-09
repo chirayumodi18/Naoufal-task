@@ -31,7 +31,7 @@ const CoverImage = () => {
             </div>
             <div className="get-started-modal-wrapper">
                 <div className="get-started-modal">
-                    <div className="m-5">
+                    <div className="device-space">
                         <h1>Earn money as an Airbnb host</h1>
                         <div>
                             <form>

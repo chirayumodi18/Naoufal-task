@@ -5,13 +5,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 25px;
     .custom-border {
       width: 64px;
       height: 2px;
       border: 1px solid #767676;
     }
   }
-  .cover-image-container {
+  .blog-section {
+    margin-bottom: 100px;
+  }
+
+.cover-image-container {
     margin: 0 120px;
     position: relative;
     .cover-image-wrapper {
@@ -42,6 +47,13 @@
         box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
         margin: 78px 92px 0 0;
         text-align: left;
+        .device-space {
+          margin: 32px;
+          h1 {
+            line-height: 40px;
+            margin-bottom: 15px;
+          }
+        }
         form {
           p {
             font-weight: 600;
@@ -70,6 +82,7 @@
         margin-right: 64px;
         p {
           margin-bottom: 16px;
+          margin-top: 24px;
         }
         span {
           margin-top: 16px;
@@ -100,8 +113,8 @@
               margin-left: 42px;
             }
             img {
-              height: 40px;
-              width: 40px;
+              height: 48px;
+              width: 48px;
             }
             h3 {
               margin: 20px 0;
@@ -113,6 +126,7 @@
               color: #484848;
               padding-top: 2px;
               padding-bottom: 2px;
+              text-align: left;
             }
             .link {
               margin: 20px 0;
@@ -141,6 +155,7 @@
         .quote {
           height: 40px;
           width: 40px;
+          margin-bottom: 15px;
           img {
             height: 100%;
             width: 100%;
@@ -184,8 +199,8 @@
           border-color: #484848;
           background: transparent;
           box-shadow: none;
-          padding-left: 22px;
-          padding-right: 22px;
+          padding-left: 27px;
+          padding-right: 27px;
           min-width: 72px;
         }
       }
@@ -291,6 +306,10 @@
           padding-top: 24px;
           padding-bottom: 24px;
           color: #008489;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -316,6 +335,7 @@
         img {
           width: 333px;
           height: 170px;
+          margin-bottom: 16px;
         }
         .title {
           line-height: 22px;
@@ -324,6 +344,7 @@
           text-overflow: ellipsis;
           font-size: 16px;
           font-weight: 800;
+          margin-bottom: 5px;
           color: #484848;
           font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
         }
@@ -333,7 +354,7 @@
           font-weight: 300;
           font-size: 14px;
           font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
-          margin-bottom: 8px;
+          margin-bottom: 2px;
         }
         span {
           color: #008489;
@@ -345,13 +366,52 @@
       }
     }
   }
+  .ready-to-earn {
+    .image-wrapper {
+      height: 440px;
+      max-width: 1280px;
+      background-size: cover;
+      background-position: center;
+      margin: auto;
+      position: relative;
+      .image-view {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(https://a0.muscache.com/4ea/air/v2/pictures/dbe25d99-6821-4e02-802f-fcd7aaef85bc.jpg?t=n:ope,e:fwebp-c75);
+      }
+      .image-text-wrapper {
+        position: absolute;
+        top: 0;
+        width: 1080px;
+        .image-text {
+          position: relative;
+          margin-left: 140px;
+          width: 100%;
+          h2 {
+            padding-top: 96px;
+            font-size: 60px;
+            line-height: 64px;
+            letter-spacing: -2.5px;
+            max-width: 430px;
+            color: #ffffff;
+            padding-bottom: 8px;
+            font-weight: 700;
+            font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+
+          }
+        }
+      }
+    }
+  }
 }
 
 .heading {
   max-width: 1080px;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 64px;
+  margin-bottom: 10px;
   text-align: center;
   h2 {
     font-weight: 900;
@@ -359,5 +419,6 @@
     font-size: 60px;
     line-height: 64px;
     letter-spacing: -2.5px;
+    margin-bottom: 64px;
   }
 }
