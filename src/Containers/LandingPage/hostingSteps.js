@@ -4,7 +4,7 @@ import correct from '../../images/correct-circle.svg';
 const HostingSteps = () => {
 	return (
 		<div className="hosting-steps container">
-			<div className="hosting-steps-heading">
+			<div className="heading">
 				<h2>Hosting in 3 steps</h2>
 			</div>
 			<div className="hosting-steps-wrapper">

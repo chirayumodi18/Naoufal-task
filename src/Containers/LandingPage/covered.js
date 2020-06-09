@@ -4,7 +4,7 @@ import greenCorrect from '../../images/correct-green.svg';
 const Covered = () => {
 	return (
 		<Fragment>
-			<div className="covered-heading">
+			<div className="heading">
 				<h2>We’ve got you covered</h2>
 			</div>
 			<div className="covered-body">

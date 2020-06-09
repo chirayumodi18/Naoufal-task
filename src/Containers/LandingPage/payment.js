@@ -3,7 +3,7 @@ import React from 'react';
 const Payment = () => {
 	return (
 		<div className="payment-steps container">
-			<div className="payment-steps-heading">
+			<div className="heading">
 				<h2>Payments made simple</h2>
 			</div>
 			<div className="payment-steps-wrapper">

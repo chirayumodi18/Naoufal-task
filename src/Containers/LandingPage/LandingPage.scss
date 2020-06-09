@@ -68,21 +68,21 @@
       .marketing {
         text-align: left;
         margin-right: 64px;
+        p {
+          margin-bottom: 16px;
+        }
+        span {
+          margin-top: 16px;
+          color: #008489;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
   .hosting-steps, .payment-steps {
-    .hosting-steps-heading, .payment-steps-heading {
-      text-align: center;
-      margin: 30px 0;
-      h2 {
-        font-size: 60px;
-        line-height: 64px;
-        letter-spacing: -2.5px;
-        font-weight: 900;
-        color: #333333;
-      }
-    }
     .hosting-steps-wrapper, .payment-steps-wrapper {
       max-width: 1080px;
       width: auto;
@@ -209,20 +209,6 @@
       }
     }
   }
-  .covered-heading {
-    max-width: 1080px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 64px;
-    text-align: center;
-    h2 {
-      font-weight: 900;
-      color: #333333;
-      font-size: 60px;
-      line-height: 64px;
-      letter-spacing: -2.5px;
-    }
-  }
   .covered-body {
     width: 1080px;
     margin: 0 auto;
@@ -269,5 +255,109 @@
         width: 100%;
       }
     }
+  }
+  .hosts-data-section {
+    .hosts-data-body {
+      width: 1080px;
+      margin: 0 auto;
+      margin-bottom: 64px;
+      display: flex;
+      justify-content: space-around;
+      .hosts-data {
+        margin-bottom: 24px;
+        text-align: center;
+        .data {
+          font-size: 60px;
+          line-height: 64px;
+          color: #484848;
+          font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+        }
+        .text {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .frequently-asked-questions {
+    width: 1080px;
+    margin: 0 auto;
+    .frequently-asked-questions-wrapper {
+      display: flex;
+      .question-wrapper {
+        flex: 1;
+        margin-right: 30px;
+        .question {
+          border-bottom: 1px solid #EBEBEB;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          color: #008489;
+        }
+      }
+    }
+  }
+  .about-hosting {
+    width: 1080px;
+    margin: 0 auto;
+    &-heading {
+      margin: 0;
+      word-wrap: break-word;
+      font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.25em;
+      color: #484848;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .about-hosting-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .hosting {
+        img {
+          width: 333px;
+          height: 170px;
+        }
+        .title {
+          line-height: 22px;
+          max-height: 22px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 16px;
+          font-weight: 800;
+          color: #484848;
+          font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+        }
+        .description {
+          line-height: 1.375em;
+          color: #484848;
+          font-weight: 300;
+          font-size: 14px;
+          font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+          margin-bottom: 8px;
+        }
+        span {
+          color: #008489;
+          font-weight: 300;
+          line-height: 1.375em;
+          font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.heading {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 64px;
+  text-align: center;
+  h2 {
+    font-weight: 900;
+    color: #333333;
+    font-size: 60px;
+    line-height: 64px;
+    letter-spacing: -2.5px;
   }
 }

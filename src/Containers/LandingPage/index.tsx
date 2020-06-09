@@ -6,7 +6,13 @@ import BlogSection from './blogSection';
 import Covered from './covered';
 import Payment from './payment';
 import BlogSection2 from './blogSection2';
+import HostsDataSection from './hostsDataSection';
+import AboutPage from './about';
+import FrequentlyAskedQuestions from './frequentlyAskedQuestions';
+import AboutHosting from './aboutHosting';
+
 import Person2 from '../../images/person2.jpg';
+
 import './LandingPage.scss';
 
 const Divider = () => {
@@ -38,6 +44,15 @@ const LandingPage = () => {
       <Payment />
       <BlogSection2 />
       <Divider />
+      <HostsDataSection />
+      <div className="height-divider container" />
+      <Divider />
+      <AboutPage />
+      <div className="height-divider container" />
+      <Divider />
+      <FrequentlyAskedQuestions />
+      <div className="height-divider container" />
+      <AboutHosting />
     </div>
     )
 }
