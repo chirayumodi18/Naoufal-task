@@ -17,8 +17,9 @@
   }
 
 .cover-image-container {
-    margin: 0 120px;
-    position: relative;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1600px;
     .cover-image-wrapper {
       position: relative;
       background-size: cover;
@@ -34,40 +35,40 @@
         background-size: cover;
         background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("https://a0.muscache.com/4ea/air/v2/pictures/9d08d356-59b9-4ac4-9f41-5b9c13c2b211.jpg?t=n:ope,e:fwebp-c75")
       }
-    }
-    .get-started-modal-wrapper {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      .get-started-modal {
-        background-color: #ffffff;
-        float: right;
-        max-width: 460px;
-        border-radius: 4px;
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-        margin: 78px 92px 0 0;
-        text-align: left;
-        .device-space {
-          margin: 32px;
-          h1 {
-            line-height: 40px;
-            margin-bottom: 15px;
+      .get-started-modal-wrapper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        .get-started-modal {
+          background-color: #ffffff;
+          float: right;
+          max-width: 460px;
+          border-radius: 4px;
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+          margin: 78px 92px 0 0;
+          text-align: left;
+          .device-space {
+            margin: 32px;
+            h1 {
+              line-height: 40px;
+              margin-bottom: 15px;
+            }
           }
-        }
-        form {
-          p {
-            font-weight: 600;
+          form {
+            p {
+              font-weight: 600;
+            }
           }
-        }
-        .dropdown-wrapper {
-          display: flex;
-          .entire-place-dropdown {
-            flex: 3;
-            padding-right: 5px;
-          }
-          .guests-dropdown {
-            flex: 2;
-            padding-left: 5px;
+          .dropdown-wrapper {
+            display: flex;
+            .entire-place-dropdown {
+              flex: 3;
+              padding-right: 5px;
+            }
+            .guests-dropdown {
+              flex: 2;
+              padding-left: 5px;
+            }
           }
         }
       }
@@ -76,6 +77,7 @@
   .marketing-wrapper {
     margin: 0 20px;
     .wrapper {
+
       padding: 0 85px;
       .marketing {
         text-align: left;
@@ -387,7 +389,7 @@
         width: 1080px;
         .image-text {
           position: relative;
-          margin-left: 140px;
+          padding-left: 140px;
           width: 100%;
           h2 {
             padding-top: 96px;
@@ -400,6 +402,11 @@
             font-weight: 700;
             font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
 
+          }
+          button {
+            &:hover {
+              color: #fff;
+            }
           }
         }
       }
@@ -420,5 +427,340 @@
     line-height: 64px;
     letter-spacing: -2.5px;
     margin-bottom: 64px;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .Landing-page {
+    .cover-image-container {
+      min-height: 280px;
+
+      .cover-image-wrapper {
+        height: auto !important;
+
+        .cover-image {
+          min-height: 280px;
+        }
+
+        .get-started-modal-wrapper {
+          position: unset !important;
+
+          .get-started-modal {
+            max-width: 100% !important;
+            float: unset;
+
+            margin: 0 auto;
+            box-shadow: none;
+            padding: 0 70px;
+          }
+        }
+      }
+    }
+    .heading {
+      max-width: 696px !important;
+      margin: 0 auto;
+    }
+    .marketing-wrapper {
+      .wrapper {
+        flex-direction: column;
+        max-width: 696px !important;
+        .marketing {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .hosting-steps {
+      .hosting-steps-wrapper {
+        .hosting-steps {
+          padding: 0 85px;
+          max-width: 696px !important;
+          flex-direction: column;
+          margin: 0 64px;
+          .step {
+            margin-bottom: 30px;
+            .step-margin {
+              margin-left: 0 !important;
+            }
+          }
+        }
+      }
+    }
+    .blog-section {
+      .blog-section-wrapper {
+       max-width: 696px !important;
+        .quote-wrapper {
+          margin-right: 0;
+          .quote-text {
+            font-size: 18px;
+            line-height: normal;
+          }
+        }
+        .person-wrapper {
+          .person {
+              width: 315px;
+              height: 315px;
+          }
+        }
+      }
+    }
+    .covered-body {
+      width: 100% !important;
+      .covered-wrapper {
+        flex-direction: column;
+        max-width: 696px !important;
+        margin: 0 auto;
+        .covered-text {
+          margin-top: 0 !important;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .person-image {
+      width: 100% !important;
+      margin: 0 auto;
+      .image-wrapper {
+        max-width: 696px !important;
+        margin: 0 auto;
+        height: 411px;
+      }
+    }
+    .payment-steps {
+      .payment-steps-wrapper {
+        .payment-steps {
+          flex-direction: column;
+          max-width: 696px !important;
+          margin: 0 auto;
+        }
+      }
+    }
+    .hosts-data-section {
+      .hosts-data-body {
+        max-width: 696px !important;
+        .hosts-data {
+          .data {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .frequently-asked-questions {
+      max-width: 696px !important;
+      margin: 0 auto;
+      .frequently-asked-questions-wrapper {
+        flex-direction: column;
+      }
+    }
+    .about-hosting {
+      max-width: 696px !important;
+      margin: 0 auto;
+      .about-hosting-wrapper {
+        .hosting {
+          width: 33.33%;
+          padding-right: 15px;
+          img {
+            max-width: 100%;
+            height: 104px;
+          }
+        }
+      }
+    }
+    .ready-to-earn {
+      .image-wrapper {
+        .image-text-wrapper {
+          width: 100%;
+          .image-text {
+            margin-left: 0;
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Landing-page {
+    .cover-image-container {
+      min-height: 280px;
+      .cover-image-wrapper {
+        height: auto !important;
+        .cover-image {
+          min-height: 280px;
+        }
+        .get-started-modal-wrapper {
+          position: unset !important;
+          .get-started-modal {
+            max-width: 100% !important;
+            float: unset;
+            margin: 0 auto;
+            box-shadow: none;
+            padding: 0 16px !important;
+          }
+        }
+      }
+    }
+    .heading {
+      max-width: unset !important;
+      width: 100%;
+      margin: 0 auto;
+      h2 {
+        font-size: 40px;
+      }
+    }
+    .marketing-wrapper {
+      .wrapper {
+        flex-direction: column;
+        max-width: unset !important;
+        padding: 0 16px;
+        .marketing {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .hosting-steps {
+      max-width: 100%;
+      .hosting-steps-wrapper {
+        padding: 0;
+        .hosting-steps {
+          padding: 0;
+          max-width: unset !important;
+          margin: 0;
+          .step {
+            margin-bottom: 30px;
+            .step-margin {
+              margin-left: 0 !important;
+            }
+          }
+        }
+      }
+    }
+    .height-divider {
+      display: none;
+    }
+    .blog-section {
+      .blog-section-wrapper {
+        max-width: unset !important;
+        width: 100%;
+        flex-direction: column-reverse;
+        .quote-wrapper {
+          margin-right: 0;
+          margin-bottom: 20px;
+          .quote-text {
+            font-size: 18px;
+            line-height: normal;
+          }
+        }
+        .person-wrapper {
+          .person {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .covered-body {
+      width: 100% !important;
+      .covered-wrapper {
+        flex-direction: column;
+        max-width: unset !important;
+        margin: 0 auto;
+        padding: 0 16px;
+        .covered-text {
+          margin-top: 0 !important;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .person-image {
+      width: 100% !important;
+      margin: 0 auto;
+      .image-wrapper {
+        max-width: unset !important;
+        margin: 0 auto;
+        height: 411px;
+      }
+    }
+    .payment-steps {
+      .payment-steps-wrapper {
+        .payment-steps {
+          flex-direction: column;
+          max-width: unset !important;
+          margin: 0 auto;
+        }
+      }
+    }
+    .hosts-data-section {
+      .hosts-data-body {
+        max-width: unset !important;
+        flex-direction: column;
+        width: 100%;
+        .hosts-data {
+          .data {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .frequently-asked-questions {
+      max-width: unset !important;
+      margin: 0 auto;
+      padding: 0 16px;
+      width: 100%;
+      .frequently-asked-questions-wrapper {
+        flex-direction: column;
+      }
+    }
+    .about-hosting {
+      max-width: unset !important;
+      margin: 0 auto;
+      width: 100%;
+      .about-hosting-heading {
+        margin-left: 20px;
+      }
+      .about-hosting-wrapper {
+        flex-direction: column;
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        .hosting {
+          width: 100%;
+          padding-right: 0;
+          margin-bottom: 15px;
+          display: flex;
+          border: 1px solid rgba(0,0,0,0.1);
+          border-radius: 3px;
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.06);
+          img {
+            max-width: 100%;
+            width: 76px;
+            height: 76px;
+          }
+          .about-img {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .ready-to-earn {
+      .image-wrapper {
+        .image-text-wrapper {
+          width: 100%;
+          .image-text {
+            margin-left: 0;
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Landing-page {
+
   }
 }

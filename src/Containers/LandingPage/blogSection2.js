@@ -6,13 +6,13 @@ const BlogSection2 = () => {
 	return (
 		<div className="blog-section">
 			<div className="blog-section-wrapper mt-5">
-				<div className="person-wrapper ">
+				<div className="person-wrapper order-1 order-md-0">
 					<div className="person">
 						<img src={Person3} alt="person1" />
 					</div>
 				</div>
 				<div className="middle-divider" />
-				<div className="mt-5 quote-wrapper quote-right">
+				<div className="mt-5 quote-wrapper order-0 order-md-1 quote-right">
 					<div className="quote">
 						<img src={quote} alt="quote" />
 					</div>

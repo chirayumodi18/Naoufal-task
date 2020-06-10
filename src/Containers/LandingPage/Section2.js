@@ -3,7 +3,7 @@ import React from 'react';
 const Section2 = () => {
 	return (
 		<div className="marketing-wrapper my-5">
-			<div className="container d-flex wrapper ">
+			<div className="container d-flex wrapper  ">
 				<div className="marketing">
 					<h3>Why host on Airbnb?</h3>
 					<p>
