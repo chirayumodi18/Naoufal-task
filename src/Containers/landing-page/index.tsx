@@ -3,7 +3,7 @@ import CoverImage from './cover-image-section';
 import Section2 from './section-2';
 import HostingSteps from './hosting-steps-section';
 import BlogSection from './blog-section';
-import Covered from './CoveredSection';
+import Covered from './covered-section';
 import Payment from './payment-section';
 import BlogSection2 from './blog-section-2';
 import HostsDataSection from './hosts-data-section';
@@ -14,7 +14,7 @@ import ReadyToEarn from './ready-to-earn-section';
 
 import Person2 from '../../images/person2.jpg';
 
-import './LandingPage.scss';
+import './landing-page.scss';
 
 const Divider = () => {
   return (
