@@ -1,16 +1,16 @@
 import React from 'react'
-import CoverImage from './CoverImageSection';
-import Section2 from './Section2';
-import HostingSteps from './HostingStepsSection';
-import BlogSection from './BlogSection';
+import CoverImage from './cover-image-section';
+import Section2 from './section-2';
+import HostingSteps from './hosting-steps-section';
+import BlogSection from './blog-section';
 import Covered from './CoveredSection';
-import Payment from './PaymentSection';
-import BlogSection2 from './BlogSection2';
-import HostsDataSection from './HostsDataSection';
-import AboutPage from './AboutSection';
-import FrequentlyAskedQuestions from './FrequentlyAskedQuestionSection';
-import AboutHosting from './AboutHostingSection';
-import ReadyToEarn from './ReadyToEarnSection';
+import Payment from './payment-section';
+import BlogSection2 from './blog-section-2';
+import HostsDataSection from './hosts-data-section';
+import AboutPage from './about-section';
+import FrequentlyAskedQuestions from './frequently-asked-question-section';
+import AboutHosting from './about-hosting-section';
+import ReadyToEarn from './ready-to-earn-section';
 
 import Person2 from '../../images/person2.jpg';
 
