@@ -1,5 +1,5 @@
 import React from 'react';
-import correct from '../../images/correct-circle.svg';
+import correct from '../../../images/correct-circle.svg';
 
 const HostingSteps = () => {
 	return (

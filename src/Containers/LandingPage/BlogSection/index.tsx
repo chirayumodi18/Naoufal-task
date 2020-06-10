@@ -1,8 +1,8 @@
 import React from 'react';
-import quote from '../../images/quote.svg';
-import Person1 from '../../images/person1.jpg';
+import quote from '../../../images/quote.svg';
+import Person1 from '../../../images/person1.jpg';
 
-const BlogSection = () => {
+const Index = () => {
 	return (
 		<div className="blog-section">
 			<div className="blog-section-wrapper mt-5">
@@ -32,4 +32,4 @@ const BlogSection = () => {
 	)
 };
 
-export default BlogSection;
+export default Index;

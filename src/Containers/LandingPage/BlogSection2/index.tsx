@@ -1,6 +1,6 @@
 import React from 'react';
-import quote from '../../images/quote.svg';
-import Person3 from '../../images/person3.jpg';
+import quote from '../../../images/quote.svg';
+import Person3 from '../../../images/person3.jpg';
 
 const BlogSection2 = () => {
 	return (

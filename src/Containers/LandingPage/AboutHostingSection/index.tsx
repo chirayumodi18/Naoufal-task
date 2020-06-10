@@ -1,9 +1,9 @@
 import React from 'react';
-import HostingImage1 from '../../images/hosting-image1.jpg';
-import HostingImage2 from '../../images/hosting-image2.jpg';
-import HostingImage3 from '../../images/hosting-image3.jpg';
+import HostingImage1 from '../../../images/hosting-image1.jpg';
+import HostingImage2 from '../../../images/hosting-image2.jpg';
+import HostingImage3 from '../../../images/hosting-image3.jpg';
 
-const AboutHosting = () => {
+const Index = () => {
 	return (
 		<div className="about-hosting">
 			<div className="about-hosting-heading mb-3">
@@ -40,4 +40,4 @@ const AboutHosting = () => {
 	)
 };
 
-export default AboutHosting;
+export default Index;

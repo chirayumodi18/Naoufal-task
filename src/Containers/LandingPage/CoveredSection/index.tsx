@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import greenCorrect from '../../images/correct-green.svg';
+import greenCorrect from '../../../images/correct-green.svg';
 
 const Covered = () => {
 	return (
