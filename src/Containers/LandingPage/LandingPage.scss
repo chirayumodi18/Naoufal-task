@@ -33,7 +33,7 @@
         height: 100%;
         background-position: 0 0;
         background-size: cover;
-        background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("https://a0.muscache.com/4ea/air/v2/pictures/9d08d356-59b9-4ac4-9f41-5b9c13c2b211.jpg?t=n:ope,e:fwebp-c75")
+        background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/3740400/pexels-photo-3740400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
       }
       .get-started-modal-wrapper {
         position: absolute;
@@ -216,7 +216,6 @@
       }
       .person-wrapper {
         .person {
-          height: 516px;
           width: 516px;
           img {
             height: 100%;
@@ -338,6 +337,7 @@
           width: 333px;
           height: 170px;
           margin-bottom: 16px;
+          object-fit: cover;
         }
         .title {
           line-height: 22px;
@@ -381,7 +381,7 @@
         height: 100%;
         background-position: center center;
         background-size: cover;
-        background-image: url(https://a0.muscache.com/4ea/air/v2/pictures/dbe25d99-6821-4e02-802f-fcd7aaef85bc.jpg?t=n:ope,e:fwebp-c75);
+        background-image: url(https://images.pexels.com/photos/4123714/pexels-photo-4123714.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
       }
       .image-text-wrapper {
         position: absolute;
@@ -563,6 +563,7 @@
           img {
             max-width: 100%;
             height: 104px;
+            object-fit: cover;
           }
         }
       }
@@ -681,7 +682,12 @@
       .image-wrapper {
         max-width: unset !important;
         margin: 0 auto;
-        height: 411px;
+        height: 100%;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
     .payment-steps {
@@ -738,6 +744,7 @@
             max-width: 100%;
             width: 76px;
             height: 76px;
+            object-fit: cover;
           }
           .about-img {
             margin-left: 10px;
