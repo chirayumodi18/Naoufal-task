@@ -11,7 +11,7 @@ const Index = () => {
 			</div>
 			<div className="about-hosting-wrapper">
 				<div className="hosting">
-					<img src={HostingImage1} alt="hosting-image" />
+					<img src={HostingImage1} alt="hosting" />
 				<span className="about-img">
 					<div className="title">Setup</div>
 					<div className="description">How to start hosting</div>
@@ -20,7 +20,7 @@ const Index = () => {
 
 				</div>
 				<div className="hosting">
-					<img src={HostingImage2} alt="hosting-image" />
+					<img src={HostingImage2} alt="hosting" />
 					<span className="about-img">
 					<div className="title">Safety</div>
 					<div className="description">How Airbnb protects hosts</div>
@@ -28,7 +28,7 @@ const Index = () => {
 					</span>
 				</div>
 				<div className="hosting">
-					<img src={HostingImage3} alt="hosting-image" />
+					<img src={HostingImage3} alt="hosting" />
 					<span className="about-img">
 					<div className="title">Financials</div>
 					<div className="description">How you make money on Airbnb</div>

@@ -52,6 +52,7 @@ const CoverImage = () => {
                                                       id="entire_place"
                                                       variant="outlined"
                                                       labelId="entire_place_label"
+                                                      defaultValue={10}
                                                     >
                                                         <MenuItem value={10}>Ten</MenuItem>
                                                         <MenuItem value={20}>Twenty</MenuItem>
@@ -70,6 +71,7 @@ const CoverImage = () => {
                                                     <Select
                                                       id="guests"
                                                       labelId="guests-label"
+                                                      defaultValue={1}
                                                       variant="outlined"
                                                     >
                                                         <MenuItem value={1}>1 guest</MenuItem>
