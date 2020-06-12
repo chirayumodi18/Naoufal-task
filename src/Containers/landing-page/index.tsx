@@ -12,7 +12,7 @@ import FrequentlyAskedQuestions from './frequently-asked-question-section';
 import AboutHosting from './about-hosting-section';
 import ReadyToEarn from './ready-to-earn-section';
 
-import Person2 from '../../images/person2.jpg';
+import Person2 from '../../images/landing-page/person2.jpg';
 
 import './landing-page.scss';
 

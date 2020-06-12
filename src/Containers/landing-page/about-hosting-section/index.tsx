@@ -1,7 +1,7 @@
 import React from 'react';
-import HostingImage1 from '../../../images/hosting-image1.jpg';
-import HostingImage2 from '../../../images/hosting-image2.jpg';
-import HostingImage3 from '../../../images/hosting-image3.jpg';
+import HostingImage1 from '../../../images/landing-page/hosting-image1.jpg';
+import HostingImage2 from '../../../images/landing-page/hosting-image2.jpg';
+import HostingImage3 from '../../../images/landing-page/hosting-image3.jpg';
 
 const Index = () => {
 	return (

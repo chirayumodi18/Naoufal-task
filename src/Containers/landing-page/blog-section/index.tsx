@@ -1,6 +1,6 @@
 import React from 'react';
 import quote from '../../../images/quote.svg';
-import Person1 from '../../../images/person1.jpg';
+import Person1 from '../../../images/landing-page/person1.jpg';
 
 const Index = () => {
 	return (
