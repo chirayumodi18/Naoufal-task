@@ -18,10 +18,11 @@ const ExampleSection = () => {
 				<div className="example-section__wrapper">
 					<div className="example-section__wrapper__background-cover image-2" />
 					<p className="example-section__wrapper__header">
-						<strong>Cultivating unbiased hospitality</strong>
+						<strong>A World of Belonging</strong>
 					</p>
 					<p className="example-section__wrapper__description">
-						Our hosts have the power to end discrimination through experiences of human connection.
+						Our global community never fails to amaze us with their stories of kindness and connection. Our
+						#OneLessStranger movement shares these moments of empathy and discovery with the world.
 					</p>
 				</div>
 			</div>
@@ -29,10 +30,11 @@ const ExampleSection = () => {
 				<div className="example-section__wrapper">
 					<div className="example-section__wrapper__background-cover image-3" />
 					<p className="example-section__wrapper__header">
-						<strong>Cultivating unbiased hospitality</strong>
+						<strong>Old Boots Sold, New Love Found</strong>
 					</p>
 					<p className="example-section__wrapper__description">
-						Our hosts have the power to end discrimination through experiences of human connection.
+						Our community is what makes Airbnb possible. This story of love and pride is a perfect example
+						of how our hosts and guests inspire us to build a better platform to enable global belonging.
 					</p>
 				</div>
 			</div>
@@ -40,10 +42,11 @@ const ExampleSection = () => {
 				<div className="example-section__wrapper">
 					<div className="example-section__wrapper__background-cover image-4" />
 					<p className="example-section__wrapper__header">
-						<strong>Cultivating unbiased hospitality</strong>
+						<strong>Visualising Our Unity</strong>
 					</p>
 					<p className="example-section__wrapper__description">
-						Our hosts have the power to end discrimination through experiences of human connection.
+						This portrait series was led by our Black@ Airfinity group and allies, who are also a part of our global
+						community of hosts and guests, to spark conversations about racial discrimination and #BlackLivesMatter.
 					</p>
 				</div>
 			</div>

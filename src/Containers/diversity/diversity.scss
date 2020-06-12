@@ -7,7 +7,7 @@
     border-top: 1px solid #dce0e0;
   }
   .photo-section {
-    background-image: url(https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?cs=srgb&dl=people-silhouette-during-sunset-853168.jpg&fm=jpg);
+    background-image: url(../../images/diversity/photo-section.jpg);
     height: 500px;
     background-size: cover;
     padding-bottom: 18px;
@@ -22,7 +22,7 @@
     position: relative;
   }
   .photo-section2 {
-    background-image: url(https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-image: url(../../images/diversity/photo-section2.jpeg);
     height: 500px;
     background-size: cover;
     padding-bottom: 18px;
@@ -56,7 +56,7 @@
           opacity: 0.3;
           content: " ";
         }
-        background-image: url(https://images.pexels.com/photos/3773837/pexels-photo-3773837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: url(../../images/diversity/cover-image.jpeg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -251,22 +251,22 @@
         background-repeat: no-repeat;
         margin-bottom: 12px;
         &.image-1 {
-          background-image: url(https://a0.muscache.com/airbnb/static/diversity/inclusion/cultivating_unbiased-0974cdfea3a227b4b8219d997a7f173e.jpg);
+          background-image: url(../../images/diversity/hospitality.jpg);
         }
         &.image-2 {
-          background-image: url(https://images.pexels.com/photos/269633/pexels-photo-269633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+          background-image: url(../../images/diversity/world.jpeg);
         }
         &.image-3 {
-          background-image: url(https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+          background-image: url(../../images/diversity/love.jpeg);
         }
         &.image-4 {
-          background-image: url(https://images.unsplash.com/photo-1584592487914-a29c64f25887?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);
+          background-image: url(../../images/diversity/unity.jpeg);
         }
       }
       &__header {
         margin-bottom: 8px;
         font-size: 1.2em;
-        font-weight: 300;
+        font-weight: bold;
         line-height: 1.27;
         letter-spacing: -0.2px;
       }
