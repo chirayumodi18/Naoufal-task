@@ -15,6 +15,11 @@
   padding-top: 8px;
   padding-bottom: 8px;
   font-weight: 800;
+  @media screen and (max-width: 743px) {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 2px 0;
+  }
 }
 
 @mixin description-mixin {
@@ -85,7 +90,6 @@
           font-weight: 500;
           background-color: transparent;
           border-width: 0;
-          border-bottom-width: 2px;
           margin-right: 32px;
           padding: 24px 0;
           color: #484848;
@@ -96,7 +100,6 @@
           display: block;
           text-decoration: none;
           white-space: nowrap;
-          border-bottom-color: #008489;
           transition-property: color;
           transition-duration: 300ms;
           transition-timing-function: ease-out;
@@ -349,6 +352,83 @@
         }
       }
     }
+    &__body-mobile {
+      display: none;
+      &:before {
+        content: " ";
+        display: table;
+      }
+      &:after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+      &__section1 {
+        width: 100%;
+        height: 325px;
+        background-color: rgb(235, 235, 235);
+        opacity: 0.7;
+        overflow: hidden;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        &__phone {
+          position: relative;
+          margin-top: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 247px;
+          height: 510px;
+          background-image:url(https://a0.muscache.com/airbnb/static/packages/iPhone_front.2500032c.png);
+          background-size: 247px 510px;
+          background-position:center;
+          background-repeat:no-repeat;
+          &__battery-section {
+            position: absolute;
+            left: 21px;
+            top: 58px;
+            z-index: 1;
+            img {
+              width: 200px;
+              height: 8px;
+            }
+          }
+          &__pages-wrapper {
+            position: absolute;
+            left: 13px;
+            top: 60px;
+            width: 222px;
+            height: 397px;
+            img {
+              width: 222px;
+              height: 397px;
+            }
+          }
+        }
+      }
+      &__secton2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        h2 {
+          color: rgb(118, 118, 118);
+          font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: normal;
+        }
+      }
+      &__section3 {
+        margin: 0;
+        word-wrap: break-word;
+        font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.375em;
+        color: #484848;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
   }
   .contact-us {
     display: table-row;
@@ -409,7 +489,7 @@
       &__item-wrapper {
         width: 33.33333333333333%;
         float: left;
-        padding-left: 8px;
+        padding-left: 22px;
         padding-right: 8px;
         min-height: 1px;
         position: relative;
@@ -499,4 +579,137 @@
   margin-bottom: 0;
   border: 0;
   border-top: 1px solid #dce0e0;
+}
+
+@media screen and (min-width: 744px) {
+  .trust {
+    max-width: 696px;
+    .safety-design-wrapper {
+      &__description {
+        div {
+          width: 100%;
+        }
+      }
+    }
+    .expect-wrapper {
+      &__body {
+        &__section1 {
+          width: 58.333333333333336%;
+        }
+        &__section3 {
+          width: 8.333333333333332%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .trust {
+    padding: 0 12px !important;
+    .heading-wrapper {
+      &__heading {
+        width: 100%;
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: normal;
+        font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+        color: #484848;
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+    }
+    .expect-wrapper {
+      &__description {
+        div {
+          width: 100% !important;
+        }
+      }
+      &__body {
+        display: none;
+      }
+      &__body-mobile {
+        display: block !important;
+      }
+    }
+    .contact-us {
+      display: flex;
+      flex-direction: column;
+      &__body {
+        width: 100% !important;
+      }
+      &__image-wrapper {
+        padding-top: 40px;
+        width: 100% !important;
+        img {
+          width: 200px !important;
+          height: 200px !important;
+        }
+      }
+    }
+    .help-center {
+      &__wrapper {
+        &__item-wrapper {
+          width: 100%;
+          float: left;
+          padding-left: 22px;
+          padding-right: 8px;
+          min-height: 1px;
+          position: relative;
+          &__item {
+            height: 120px;
+            &__text-wrapper {
+              height: 120px;
+              &__text {
+                font-size: 16px;
+                line-height: 22px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .safety-design-wrapper {
+    &__description {
+      div {
+        width: 100% !important;
+      }
+    }
+    &__safety-points-wrapper {
+      margin: 0!important;
+      &__safety-points {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px !important;
+        img {
+          height: 85px !important;
+          width: 85px !important;
+        }
+        &__body {
+          width: 100% !important;
+          &__heading {
+            margin-top: 24px !important;
+            margin-bottom: 16px !important;
+            h2 {
+              font-size: 18px !important;
+              line-height: 26px !important;
+              color: #767676 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .margin-between-section {
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1128px) {
+  .trust {
+    max-width: 1080px;
+  }
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 
 const data = [
 	{
@@ -27,11 +27,12 @@ const data = [
 	}
 ]
 
+let timer: any;
+
 const WhatToExpect = () => {
 	const [image, changeImage] = useState(0);
 	const [autoChange, toggleAutoChange] = useState(true);
 	useEffect(() => {
-		let timer;
 		if (autoChange) {
 			timer = setInterval(() => {
 				const el: HTMLElement | null = document.getElementById('phone-navigate');
@@ -124,6 +125,32 @@ const WhatToExpect = () => {
 							</div>
 						</div>
 					</div>
+				</div>
+				<div className="expect-wrapper__body-mobile">
+					{
+						data.map((d) => {
+							return (
+								<Fragment>
+									<div className="expect-wrapper__body-mobile__section1">
+										<div className="expect-wrapper__body-mobile__section1__phone">
+											<div className="expect-wrapper__body-mobile__section1__phone__battery-section">
+												<img src="https://a0.muscache.com/airbnb/static/packages/screen_top.d6eb428a.png" alt="" />
+											</div>
+											<div className="expect-wrapper__body-mobile__section1__phone__pages-wrapper">
+												<img key={d.id} src={d.image} alt="" />
+											</div>
+										</div>
+									</div>
+									<div className="expect-wrapper__body-mobile__section2">
+										<h2>{d.heading}</h2>
+									</div>
+									<div className="expect-wrapper__body-mobile__section3">
+										{d.description}
+									</div>
+								</Fragment>
+							)
+						})
+					}
 				</div>
 			</div>
 		</div>

@@ -14,6 +14,7 @@ const Trust = () => {
 		<div className="trust">
 			<Heading />
 			<Menu />
+			<Divider />
 			<SafetyByDesign />
 			<Divider />
 			<WhatToExpect />
