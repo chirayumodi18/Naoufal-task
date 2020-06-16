@@ -13,10 +13,10 @@ type childrenType = {
 };
 
 const HelpSection: FC<propType>= ({ data, history, panelData }) => {
-	const [selectedPanel, changeSelectedPanel] = useState(Number(data[2]));
+	const [selectedPanel, changeSelectedPanel] = useState(Number(data[1]));
 
 	const changePanel = (panel: any, isLink: Boolean) => () => {
-		if (selectedPanel === -1 && panel === Number(data[2])) {
+		if (selectedPanel === -1 && panel === Number(data[1])) {
 			changeSelectedPanel(panel)
 			return;
 		}
@@ -30,7 +30,7 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 		if (isLink) history.push(`/help/${panel}`);
 	}
 
-	const linkId = data[3]
+	const linkId = data[2]
 
 	return (
 		<div className="help-section-wrapper__left-section-wrapper">

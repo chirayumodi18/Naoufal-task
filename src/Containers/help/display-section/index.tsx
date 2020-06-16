@@ -16,7 +16,6 @@ const DisplaySection: FC<propTypes> = ({ ...props }) => {
 	const page = props.data[3];
 	const selectedPanel = props.panelData.find(panel => panel.id === Number(panelId));
 	const selectedLink = selectedPanel && selectedPanel.children.find((c: any) => c.id === linkId);
-	debugger
 	if (!selectedPanel && panelId !== 'hosting') {
 		return <h1>Welcome to Help section</h1>
 	};
