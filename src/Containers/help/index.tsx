@@ -389,7 +389,6 @@ const panelData = [
 const Help = ({ ...props }) => {
 	let url = props.match.url.split('/');
 	url = url.filter((u: string) => u)
-	debugger
 	return (
 		<div className="help-container">
 			<BreadCrumbs data={url} history={props.history} />

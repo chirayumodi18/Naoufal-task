@@ -195,6 +195,9 @@
               font-size: 18px;
               font-weight: 800;
               cursor: pointer;
+              a {
+                color: inherit;
+              }
             }
             &__link {
               margin: 16px 0;
@@ -205,6 +208,9 @@
               font-size: 16px;
               font-weight: 400;
               line-height: 1.375em;
+              a {
+                color: #484848;;
+              }
               &:hover {
                 cursor: pointer;
                 text-decoration: underline;

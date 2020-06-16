@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, NavLink } from 'react-router-dom';
 import { History } from 'history';
 
 import Links from './help-pages/index';
@@ -49,9 +49,8 @@ const DisplaySection: FC<propTypes> = ({ ...props }) => {
 														<div
 															key={linkId}
 															className="help-section-wrapper__display-section__link-display__link-wrapper__links__link"
-															onClick={() => props.history.push(`/help/${panelId}/${linkId}/${l.linkId}`)}
 														>
-															{l.linkName}
+															<NavLink to={`/help/${panelId}/${linkId}/${l.linkId}`}>{l.linkName}</NavLink>
 														</div>
 													)
 												})
@@ -70,7 +69,9 @@ const DisplaySection: FC<propTypes> = ({ ...props }) => {
 								selectedPanel.children.map((sp: any) => {
 									return (
 										<div key={sp.id} className="help-section-wrapper__display-section__panel-display__panel-wrapper__panel">
-											<h2 onClick={() => props.history.push(`/help/${sp.id}`)}>{sp.name}</h2>
+											<h2>
+												<NavLink to={`/help/${panelId}/${sp.id}`}>{sp.name}</NavLink>
+											</h2>
 											{
 												(sp.links || []).map((link: { linkId: string, linkName: string }) => {
 													return (

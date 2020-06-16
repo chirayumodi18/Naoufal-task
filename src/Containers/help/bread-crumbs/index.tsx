@@ -1,5 +1,6 @@
 import React, { FC, Fragment } from 'react';
 import { History } from 'history';
+import { NavLink } from 'react-router-dom';
 
 type propType = {
 	data: Array<string>,
@@ -9,19 +10,19 @@ type propType = {
 const BreadCrumbs: FC<propType>= ({ data, history }) => {
 	const onBreadCrumbClick = (index: number) => () => {
 		const url = data.splice(0, index + 1).join('/');
-		history.push(`/help/${url}`);
+		history.push(`/${url}`);
 	};
 	return (
 		<div className="bread-crumbs-wrapper">
 			<nav>
 				<ol>
 					<li>
-						<span className="data" onClick={() => history.push('/help')}>Help Center</span>
+						<NavLink to="/help" className="data">Help Center</NavLink>
 						{data.length > 1 && <span className="arrow" />}
 						{data.length > 1 && (
 							<>
-								<span className="data" onClick={() => history.push('/help/hosting')}>Hosting</span>
-								{data.length > 2 && <span className="arrow" />}
+								<NavLink to="/help/hosting" className="data">Hosting</NavLink>
+								{data.length > 1 && <span className="arrow" />}
 							</>
 						)}
 						{
