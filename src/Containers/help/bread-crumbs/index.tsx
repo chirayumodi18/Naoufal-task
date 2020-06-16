@@ -16,7 +16,7 @@ const BreadCrumbs: FC<propType>= ({ data, history }) => {
 			<nav>
 				<ol>
 					<li>
-						<span className="data" onClick={() => history.push('/help')}>Help</span>
+						<span className="data" onClick={() => history.push('/help')}>Help Center</span>
 						<span className="arrow" />
 						{
 							data.map((u, index) => {

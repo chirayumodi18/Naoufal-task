@@ -16,7 +16,6 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 	const [selectedPanel, changeSelectedPanel] = useState(Number(data[2]));
 
 	const changePanel = (panel: any, isLink: Boolean) => () => {
-		debugger
 		if (selectedPanel === -1 && panel === Number(data[2])) {
 			changeSelectedPanel(panel)
 			return;
