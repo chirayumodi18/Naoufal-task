@@ -19,11 +19,11 @@ const panelData = [
 						linkName: 'New hosts',
 						links: [
 							{
-								linkId: 'l0111',
+								linkId: 'whats-the-airbnb-friendly-buildings-programme',
 								linkName: 'What\'s the Airbnb Friendly Buildings Programme?'
 							},
 							{
-								linkId: 'l0112',
+								linkId: 'who-can-host-on-airbnb',
 								linkName: 'Who can host on Airbnb?'
 							},
 							{
@@ -388,7 +388,6 @@ const panelData = [
 
 const Help = ({ ...props }) => {
 	const url = props.match.url.split('/');
-	debugger
 	const params = props.match.params ? (props.match.params[0] || '').split('/') : []
 	return (
 		<div className="help-container">

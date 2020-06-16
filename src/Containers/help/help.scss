@@ -17,6 +17,7 @@
   padding: 0 56px;
   text-align: left;
   .bread-crumbs-wrapper {
+    margin-top: 24px;
     margin-bottom: 24px;
     nav {
       display: block;
@@ -40,6 +41,10 @@
             }
             &.selected {
               color: #484848;
+              &:hover {
+                text-decoration: none;
+                cursor: unset;
+              }
             }
           }
           .arrow {
@@ -207,6 +212,34 @@
         }
       }
     }
+  }
+}
+
+.detail-pages {
+  margin-bottom: 50px;
+  h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.125em;
+    color: #484848;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+  .description {
+    margin: 10px 0;
+    word-wrap: break-word;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.375em;
+    color: #484848;
   }
 }
 

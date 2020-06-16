@@ -9,7 +9,6 @@ type propType = {
 const BreadCrumbs: FC<propType>= ({ data, history }) => {
 	const onBreadCrumbClick = (index: number) => () => {
 		const url = data.splice(0, index + 1).join('/');
-		debugger
 		history.push(`/help/${url}`);
 	};
 	return (
@@ -24,7 +23,12 @@ const BreadCrumbs: FC<propType>= ({ data, history }) => {
 								if (!u) return null
 								return (
 									<Fragment key={index}>
-										<span className="data" onClick={onBreadCrumbClick(index)}>{u}</span>
+										<span
+											className={`data ${data.length - 1 === index ? 'selected' : '' }`}
+											onClick={onBreadCrumbClick(index)}
+										>
+											{u}
+										</span>
 										{data.length - 1 !== index && <span className="arrow" />}
 									</Fragment>
 								)
