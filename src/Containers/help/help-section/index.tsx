@@ -16,6 +16,7 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 	const [selectedPanel, changeSelectedPanel] = useState(Number(data[2]));
 
 	const changePanel = (panel: any, isLink: Boolean) => () => {
+		debugger
 		if (selectedPanel === -1 && panel === Number(data[2])) {
 			changeSelectedPanel(panel)
 			return;
@@ -27,7 +28,7 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 		if (!isLink) {
 			changeSelectedPanel(panel)
 		}
-		history.push(`/help/${panel}`);
+		if (isLink) history.push(`/help/${panel}`);
 	}
 
 	const linkId = data[3]
@@ -51,7 +52,6 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 									<div className="children-wrapper">
 										{
 											selectedPanel === data.id ? data.children.map((c: childrenType) => {
-												debugger
 												return (
 													<li key={c.id}>
 														<div className="wrap">
