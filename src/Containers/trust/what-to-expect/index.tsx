@@ -1,9 +1,12 @@
 import React, { useEffect, useState, Fragment } from 'react';
+import ReviewImage from '../../../images/trust/review.png';
+import MessagingImage from '../../../images/trust/messaging.png';
+import ProfileImage from '../../../images/trust/personal-profile.png';
 
 const data = [
 	{
 		id: 0,
-		image: 'https://a0.muscache.com/airbnb/static/packages/profile_en@2x.b62322ce.jpg',
+		image: ProfileImage,
 		heading: 'Profiles',
 		description: 'Everyone on Airbnb has a profile to help other guests or hosts get to know each other. To book or ' +
 			'host, you’ll be asked to provide Airbnb with your full name, date of birth, phone number, ' +
@@ -11,7 +14,7 @@ const data = [
 	},
 	{
 		id: 1,
-		image: 'https://a0.muscache.com/airbnb/static/packages/messaging_en@2x.5ecf0fa6.jpg',
+		image: MessagingImage,
 		heading: 'Secure messaging',
 		description: 'Our secure messaging tool lets you get to know a host or guest and ask questions about a listing ' +
 			'or experience ahead of time. After the reservation is booked, you can use it to easily message back and ' +
@@ -19,7 +22,7 @@ const data = [
 	},
 	{
 		id: 2,
-		image: 'https://a0.muscache.com/airbnb/static/packages/reviews_en@2x.29a924c4.jpg',
+		image: ReviewImage,
 		heading: 'Reviews',
 		description: 'If you’re curious about what others thought of a potential guest, host, home or experience, ' +
 			'all you have to do is look at their reviews. Guests and hosts can only review each other after a ' +

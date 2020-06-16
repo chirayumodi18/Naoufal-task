@@ -1,4 +1,10 @@
 import React from 'react';
+import Person from '../../../images/trust/smile.svg';
+import IdCard from '../../../images/trust/id-card.svg';
+import RealEstate from '../../../images/trust/real-estate.svg';
+import Payment from '../../../images/trust/pay.svg';
+import Insurance from '../../../images/trust/insurance.svg';
+import Prevention from '../../../images/trust/prevention.svg';
 
 const SafetyByDesign = () => {
 	return (
@@ -15,7 +21,7 @@ const SafetyByDesign = () => {
 				<div className="safety-design-wrapper__safety-points-wrapper">
 					<div className="safety-design-wrapper__safety-points-wrapper">
 						<div className="safety-design-wrapper__safety-points-wrapper__safety-points">
-							<img src="https://a0.muscache.com/airbnb/static/packages/risk-scoring.5d7f7631.svg" alt="" />
+							<img src={Person} alt="" />
 							<div  className="safety-design-wrapper__safety-points-wrapper__safety-points__body">
 								<div className="safety-design-wrapper__safety-points-wrapper__safety-points__body__heading">
 									<h2>Risk scoring</h2>
@@ -28,7 +34,7 @@ const SafetyByDesign = () => {
 							</div>
 						</div>
 						<div className="safety-design-wrapper__safety-points-wrapper__safety-points">
-							<img src="https://a0.muscache.com/airbnb/static/packages/backgroundcheck.5a6bf8c9.svg" alt="" />
+							<img src={IdCard} alt="" />
 							<div  className="safety-design-wrapper__safety-points-wrapper__safety-points__body">
 								<div className="safety-design-wrapper__safety-points-wrapper__safety-points__body__heading">
 									<h2>Watchlist & background checks</h2>
@@ -41,7 +47,7 @@ const SafetyByDesign = () => {
 							</div>
 						</div>
 						<div className="safety-design-wrapper__safety-points-wrapper__safety-points">
-							<img src="https://a0.muscache.com/airbnb/static/packages/preparedness.8cbe590d.svg" alt="" />
+							<img src={RealEstate} alt="" />
 							<div  className="safety-design-wrapper__safety-points-wrapper__safety-points__body">
 								<div className="safety-design-wrapper__safety-points-wrapper__safety-points__body__heading">
 									<h2>Preparedness</h2>
@@ -56,7 +62,7 @@ const SafetyByDesign = () => {
 					</div>
 					<div className="safety-design-wrapper__safety-points-wrapper">
 						<div className="safety-design-wrapper__safety-points-wrapper__safety-points">
-							<img src="https://a0.muscache.com/airbnb/static/packages/secure-payment.52a19e98.svg" alt="" />
+							<img src={Payment} alt="" />
 							<div  className="safety-design-wrapper__safety-points-wrapper__safety-points__body">
 								<div className="safety-design-wrapper__safety-points-wrapper__safety-points__body__heading">
 									<h2>Secure payments</h2>
@@ -68,10 +74,7 @@ const SafetyByDesign = () => {
 							</div>
 						</div>
 						<div className="safety-design-wrapper__safety-points-wrapper__safety-points">
-							<img
-								src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDcgMTI1Ij48cGF0aCBkPSJNNjgsOTBIMTZhNS4wNyw1LjA3LDAsMCwxLTUtNS4xVjE3LjFBNS4wNyw1LjA3LDAsMCwxLDE2LDEySDY4YTUuMDcsNS4wNywwLDAsMSw1LDUuMVY4NC45QTUuMDcsNS4wNywwLDAsMSw2OCw5MCIgZmlsbD0iIzAwZDFjMSIvPjxwYXRoIGQ9Ik00OCwxMDZhNiw2LDAsMSwxLTYtNiw2LDYsMCwwLDEsNiw2IiBmaWxsPSIjZmZiNDAyIi8+PHBhdGggZD0iTTg0LDgxLjQ3djI5LjU5QTEyLjEsMTIuMSwwLDAsMSw3MS43OCwxMjNIMTIuMjJBMTIuMSwxMi4xLDAsMCwxLDAsMTExLjA1VjEyLjk1QTEyLjEsMTIuMSwwLDAsMSwxMi4yMiwxSDcxLjc4QTEyLjEsMTIuMSwwLDAsMSw4NCwxMi45NXY2LjkxYTEsMSwwLDAsMS0yLDBWMTIuOTVBMTAuMSwxMC4xLDAsMCwwLDcxLjc4LDNIMTIuMjJBMTAuMSwxMC4xLDAsMCwwLDIsMTIuOTV2OTguMTFBMTAuMSwxMC4xLDAsMCwwLDEyLjIyLDEyMUg3MS43OEExMC4xLDEwLjEsMCwwLDAsODIsMTExLjA1VjgxLjQ3YTEsMSwwLDAsMSwyLDBabTIzLTMwQTI0LjU0LDI0LjU0LDAsMSwxLDk4LjUxLDMzbDYuNjEtMTIuNDRhMSwxLDAsMSwxLDEuNzcuOTRMMTAwLDM0LjM5QTI0LjQxLDI0LjQxLDAsMCwxLDEwNyw1MS41Wm0tMiwwYTIyLjQxLDIyLjQxLDAsMCwwLTYtMTUuMjVMODUuNTIsNjEuNjdBNC40MSw0LjQxLDAsMCwxLDgxLjkzLDY0aC0uMzVBNC40Myw0LjQzLDAsMCwxLDc4LDYyLjIxTDcwLjIsNTEuNjlBMSwxLDAsMSwxLDcxLjgsNTAuNUw3OS42MSw2MWEyLjQ5LDIuNDksMCwwLDAsNC4xNS0uMjlMOTcuNTQsMzQuNzlBMjIuNDksMjIuNDksMCwxLDAsMTA1LDUxLjVaIiBmaWxsPSIjNTY1YTVjIi8+PC9zdmc+Cg=="
-								alt=""
-							/>
+							<img src={Insurance} alt="" />
 							<div  className="safety-design-wrapper__safety-points-wrapper__safety-points__body">
 								<div className="safety-design-wrapper__safety-points-wrapper__safety-points__body__heading">
 									<h2>Account protection</h2>
@@ -84,7 +87,7 @@ const SafetyByDesign = () => {
 							</div>
 						</div>
 						<div className="safety-design-wrapper__safety-points-wrapper__safety-points">
-							<img src="https://a0.muscache.com/airbnb/static/packages/safety.ace320e7.svg" alt="" />
+							<img src={Prevention} alt="" />
 							<div  className="safety-design-wrapper__safety-points-wrapper__safety-points__body">
 								<div className="safety-design-wrapper__safety-points-wrapper__safety-points__body__heading">
 									<h2>Scam prevention</h2>

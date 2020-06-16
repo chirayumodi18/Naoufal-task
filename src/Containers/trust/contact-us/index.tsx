@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfileCircle from '../../../images/trust/profile-circle.png';
 
 const ContactUs = () => {
 	return (
@@ -23,7 +24,7 @@ const ContactUs = () => {
 				<div className="contact-us__image-wrapper">
 					<div className="contact-us__image-wrapper__image">
 						<div className="contact-us__image-wrapper__image__image-cell">
-							<img src="https://a0.muscache.com/airbnb/static/packages/profile@2x.7a31bd7c.png" alt="" />
+							<img src={ProfileCircle} alt="" />
 						</div>
 					</div>
 				</div>
