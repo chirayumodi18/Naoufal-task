@@ -387,11 +387,12 @@ const panelData = [
 ];
 
 const Help = ({ ...props }) => {
-	const url = props.match.url.split('/');
-	const params = props.match.params ? (props.match.params[0] || '').split('/') : []
+	let url = props.match.url.split('/');
+	url = url.filter((u: string) => u)
+	debugger
 	return (
 		<div className="help-container">
-			<BreadCrumbs data={params} history={props.history} />
+			<BreadCrumbs data={url} history={props.history} />
 			<div className="help-section-wrapper">
 				<HelpSection data={url} history={props.history} panelData={panelData} />
 				<DisplaySection data={url} panelData={panelData} history={props.history} />

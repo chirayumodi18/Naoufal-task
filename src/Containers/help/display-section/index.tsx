@@ -11,18 +11,23 @@ type propTypes = {
 };
 
 const DisplaySection: FC<propTypes> = ({ ...props }) => {
-	const panelId = props.data[2];
-	const linkId = props.data[3];
-	const page = props.data[4];
+	const panelId = props.data[1];
+	const linkId = props.data[2];
+	const page = props.data[3];
 	const selectedPanel = props.panelData.find(panel => panel.id === Number(panelId));
 	const selectedLink = selectedPanel && selectedPanel.children.find((c: any) => c.id === linkId);
-	if (!selectedPanel) {
+	debugger
+	if (!selectedPanel && panelId !== 'hosting') {
 		return <h1>Welcome to Help section</h1>
 	};
 	return (
 		<div className="help-section-wrapper__display-section">
 			{
-				page ? (
+				panelId === 'hosting' ? (
+					<div>
+						<h1>Hosting</h1>
+					</div>
+				) : page ? (
 					<Switch>
 						<Route exact path={`/help/${panelId}/${linkId}/whats-the-airbnb-friendly-buildings-programme`} component={Links.AirbnbFriendlyProgramme} />
 						<Route exact path={`/help/${panelId}/${linkId}/who-can-host-on-airbnb`} component={Links.WhoCanHostOnAirbnb} />

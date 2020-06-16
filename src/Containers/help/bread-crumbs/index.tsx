@@ -17,10 +17,16 @@ const BreadCrumbs: FC<propType>= ({ data, history }) => {
 				<ol>
 					<li>
 						<span className="data" onClick={() => history.push('/help')}>Help Center</span>
-						<span className="arrow" />
+						{data.length > 1 && <span className="arrow" />}
+						{data.length > 1 && (
+							<>
+								<span className="data" onClick={() => history.push('/help/hosting')}>Hosting</span>
+								{data.length > 2 && <span className="arrow" />}
+							</>
+						)}
 						{
 							data.map((u, index) => {
-								if (!u) return null
+								if (['hosting', 'help'].includes(u)) return null
 								return (
 									<Fragment key={index}>
 										<span
