@@ -54,7 +54,7 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 														<div className="wrap">
 															<div className={`left-margin ${linkId === c.id ? 'selected' : ''}`} />
 															<div>
-																<div className="heading">
+																<div className={`heading ${linkId === c.id ? 'selected' : ''}`}>
 																	<NavLink to={`/help/${data.id}/${c.id}`}>{c.name}</NavLink>
 																</div>
 															</div>

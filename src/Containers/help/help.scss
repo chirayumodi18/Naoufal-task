@@ -113,7 +113,7 @@
                 padding: 0;
                 user-select: auto;
                 text-align: left;
-                font-weight: 600;
+                font-weight: 800;
                 &:hover {
                   text-decoration: underline;
                 }
@@ -152,6 +152,9 @@
                 line-height: 1.2857142857142858em;
                 color: #484848;
                 text-align: left;
+                &.selected {
+                  font-weight: 600;
+                }
                 span {
                   font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
                   text-decoration: none;
