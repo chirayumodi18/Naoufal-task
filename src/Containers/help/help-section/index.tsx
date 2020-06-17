@@ -1,5 +1,6 @@
 import React, { Fragment, useState, FC } from 'react';
 import { History } from 'history'
+import { NavLink } from 'react-router-dom';
 
 type propType = {
 	data: Array<string>,
@@ -15,7 +16,7 @@ type childrenType = {
 const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 	const [selectedPanel, changeSelectedPanel] = useState(Number(data[1]));
 
-	const changePanel = (panel: any, isLink: Boolean) => () => {
+	const changePanel = (panel: any) => () => {
 		if (selectedPanel === -1 && panel === Number(data[1])) {
 			changeSelectedPanel(panel)
 			return;
@@ -24,10 +25,7 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 			changeSelectedPanel(-1);
 			return;
 		}
-		if (!isLink) {
-			changeSelectedPanel(panel)
-		}
-		if (isLink) history.push(`/help/${panel}`);
+		changeSelectedPanel(panel)
 	}
 
 	const linkId = data[2]
@@ -41,9 +39,9 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 							<Fragment key={data.id}>
 								<li>
 									<div className="left-margin" />
-									<div onClick={changePanel(data.id, false)}>
+									<div onClick={changePanel(data.id)}>
 										<div className="heading">
-											<button>{data.heading}</button>
+											<NavLink to="#" className="head">{data.heading}</NavLink>
 										</div>
 									</div>
 								</li>
@@ -55,9 +53,9 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 													<li key={c.id}>
 														<div className="wrap">
 															<div className={`left-margin ${linkId === c.id ? 'selected' : ''}`} />
-															<div onClick={changePanel(`${data.id}/${c.id}`, true)}>
+															<div>
 																<div className="heading">
-																	<span>{c.name}</span>
+																	<NavLink to={`/help/${data.id}/${c.id}`}>{c.name}</NavLink>
 																</div>
 															</div>
 														</div>

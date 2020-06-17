@@ -102,7 +102,7 @@
               font-weight: 800;
               line-height: 1.2857142857142858em;
               color: #484848;
-              button {
+              .head {
                 font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
                 text-decoration: none;
                 color: #484848;
@@ -117,6 +117,9 @@
                 &:hover {
                   text-decoration: underline;
                 }
+              }
+              a {
+                color: inherit;
               }
             }
           }
