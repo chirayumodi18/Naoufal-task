@@ -41,7 +41,7 @@ const HelpSection: FC<propType>= ({ data, history, panelData }) => {
 									<div className="left-margin" />
 									<div onClick={changePanel(data.id)}>
 										<div className="heading">
-											<NavLink to="#" className="head">{data.heading}</NavLink>
+											<NavLink to="#">{data.heading}</NavLink>
 										</div>
 									</div>
 								</li>

@@ -12,6 +12,7 @@ const BreadCrumbs: FC<propType>= ({ data, history }) => {
 		const url = data.splice(0, index + 1).join('/');
 		history.push(`/${url}`);
 	};
+	let str:string = '/help';
 	return (
 		<div className="bread-crumbs-wrapper">
 			<nav>
@@ -28,14 +29,16 @@ const BreadCrumbs: FC<propType>= ({ data, history }) => {
 						{
 							data.map((u, index) => {
 								if (['hosting', 'help'].includes(u)) return null
+								str += `/${u}`;
 								return (
 									<Fragment key={index}>
-										<span
+										<NavLink
+											to={str}
 											className={`data ${data.length - 1 === index ? 'selected' : '' }`}
 											onClick={onBreadCrumbClick(index)}
 										>
 											{u}
-										</span>
+										</NavLink>
 										{data.length - 1 !== index && <span className="arrow" />}
 									</Fragment>
 								)
