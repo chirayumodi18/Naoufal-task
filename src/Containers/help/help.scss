@@ -95,6 +95,7 @@
             margin-left: 0;
             display: inline-block;
             .heading {
+              text-align: left;
               margin: 0;
               word-wrap: break-word;
               font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
@@ -144,6 +145,7 @@
               margin-left: 8px;
               display: inline-block;
               .heading {
+                text-align: left;
                 margin: 0;
                 word-wrap: break-word;
                 font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
@@ -276,6 +278,9 @@
         margin-top: 40px;
       }
     }
+  }
+  .detail-pages {
+    margin-left: 0;
   }
 }
 
