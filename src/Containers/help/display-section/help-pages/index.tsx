@@ -1,5 +1,5 @@
-import AirbnbFriendlyProgramme from './airbnb-friendly-programme';
-import WhoCanHostOnAirbnb from './who-can-host-on-airbnb';
+import AirbnbFriendlyProgramme from '../../getting-started/deciding-to-host/airbnb-friendly-programme';
+import WhoCanHostOnAirbnb from '../../getting-started/deciding-to-host/who-can-host-on-airbnb';
 
 const Links = {
 	AirbnbFriendlyProgramme,

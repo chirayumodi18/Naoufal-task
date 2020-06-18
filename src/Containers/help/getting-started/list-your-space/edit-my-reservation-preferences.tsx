@@ -1,8 +1,6 @@
 import React from 'react';
-import BreadCrumbs from './bread-crumbs';
-import HelpSection from './help-section';
-import DisplaySection from './display-section';
-import './help.scss';
+import BreadCrumbs from "../../bread-crumbs";
+import HelpSection from "../../help-section";
 
 const panelData = [
 	{
@@ -386,7 +384,7 @@ const panelData = [
 	},
 ];
 
-const Help = ({ ...props }) => {
+const EditMyReservationPreferences = ({ ...props }) => {
 	let url = props.match.url.split('/');
 	url = url.filter((u: string) => u)
 	return (
@@ -394,10 +392,12 @@ const Help = ({ ...props }) => {
 			<BreadCrumbs data={url} history={props.history} />
 			<div className="help-section-wrapper">
 				<HelpSection data={url} history={props.history} panelData={panelData} />
-				<DisplaySection />
+				<div className="detail-pages">
+					<h1>How do I edit my reservation preferences?</h1>
+				</div>
 			</div>
 		</div>
 	)
 };
 
-export default Help;
+export default EditMyReservationPreferences;
