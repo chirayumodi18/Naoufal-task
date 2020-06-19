@@ -37,12 +37,6 @@ const BreadCrumbs: FC<propType>= ({ data, history }) => {
 					<li>
 						<NavLink to="/help" className="data">Help Center</NavLink>
 						{data.length > 1 && <span className="arrow" />}
-						{data.length > 1 && (
-							<>
-								<NavLink to="/help/hosting" className="data">Hosting</NavLink>
-								{data.length > 1 && <span className="arrow" />}
-							</>
-						)}
 						{
 							data.map((u, index) => {
 								if (['hosting', 'help'].includes(u)) return null
