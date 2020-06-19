@@ -1,6 +1,7 @@
-import React, { FC, Fragment } from 'react';
+import React, { FC, Fragment, useEffect } from 'react';
 import { History } from 'history';
 import { NavLink } from 'react-router-dom';
+import { getPanelData } from '../../../actions/data';
 
 type propType = {
 	data: Array<string>,
@@ -12,6 +13,22 @@ const BreadCrumbs: FC<propType>= ({ data, history }) => {
 		const url = data.splice(0, index + 1).join('/');
 		history.push(`/${url}`);
 	};
+	const panelData = getPanelData();
+
+	let selectedPanel: any;
+	let selectedSubPanel: any;
+	const getPanelNames = (index: number, value: string) => {
+		if (index === 1) {
+			selectedPanel = panelData.find((d: any) => d.id.toString() === data[1])
+			return selectedPanel ? selectedPanel.heading : value
+		}
+		if (index === 2) {
+			selectedSubPanel = selectedPanel && selectedPanel.children.find((d: any) => d.id.toString() === data[2])
+			return selectedSubPanel ? selectedSubPanel.name : value
+		}
+		return value;
+	};
+
 	let str:string = '/help';
 	return (
 		<div className="bread-crumbs-wrapper">
@@ -37,7 +54,7 @@ const BreadCrumbs: FC<propType>= ({ data, history }) => {
 											className={`data ${data.length - 1 === index ? 'selected' : '' }`}
 											onClick={onBreadCrumbClick(index)}
 										>
-											{u}
+											{getPanelNames(index, u)}
 										</NavLink>
 										{data.length - 1 !== index && <span className="arrow" />}
 									</Fragment>
